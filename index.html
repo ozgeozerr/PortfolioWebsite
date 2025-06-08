@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    if (location.hostname === "ozgeozer.me") {
+      location.replace(
+        "https://www.ozgeozer.me" +
+          location.pathname +
+          location.search +
+          location.hash
+      );
+    }
+  </script>
+
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+  </head>
+  <div class="container">
+    <body>
+      <nav id="navbar">
+        <h3 style="color: white; font-size: 20px; font-weight: 500">
+          Özge Özer
+        </h3>
+        <a class="nav-text" href="#home">Home</a>
+        <a class="nav-text" href="#about">About</a>
+        <a class="nav-text" href="#projects">Projects</a>
+      </nav>
+
+      <section id="home">
+        <h1 class="bighi">hi, özge here.</h1>
+        <div class="lottie-container" style="width: 600px; height: 400px"></div>
+        <h2 class="welcomehi">welcome to my portfolio.</h2>
+        <h3 class="explainme">I'm a computer engineer from Izmir, Turkiye.</h3>
+        <a href="mailto:ozerrrozge@gmail.com" class="mail-button"
+          >contact me!
+        </a>
+      </section>
+
+      <section id="about">
+        <h2 class="header">--- about me ---</h2>
+        <div class="about-content">
+          <div class="text-block">
+            <p class="parag">
+              Fresh graduate from Izmir University of Economics,<br />
+              where I've studied Computer Engineering.<br />
+              I am very passionate about programming and creating fun
+              projects.<br />
+              I have been working on Mobile Development for a while,<br />and
+              now focused on backend development, especially with JavaScript.<br />
+              Here are some other technologies I've been working with:<br />
+            </p>
+
+            <ul class="tech-list">
+              <li>Flutter / Dart</li>
+              <li>Java / C#</li>
+              <li>JavaScript</li>
+              <li>HTML / CSS</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>C#</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+
+          <div class="photo-block">
+            <img
+              src="assets/image.png"
+              alt="Photo of me!"
+              class="about-photo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="experiences">
+        <h2 class="header">--- my experiences ---</h2>
+        <div class="experiences">
+          <h3 class="exp-title">- Lixhium -</h3>
+          <p class="parag">
+            Mobile and Web Development Intern. Mobile and Web solutions using
+            Flutter, HTML, and CSS. Created Lixhium Solar app using Flutter.
+            Created Lixhium's website.
+          </p>
+        </div>
+        <div class="experiences">
+          <h3 class="exp-title">- TPI Composites -</h3>
+          <p class="parag">
+            System Engineer Intern. Worked closely with the engineering team and
+            learned about system engineering. Learned about network and systems
+            management, contributed to the creation of a web portal.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="header">--- my projects ---</h2>
+
+        <div class="projects-grid">
+          <div class="card">
+            <h3 class="card-title">Lixhium's Website</h3>
+            <ul class="card-desc">
+              <li>HTML and CSS, Django.</li>
+              <li>For Lixhium and its services.</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://lixhium.com/" target="_blank">
+                <img
+                  src="assets/weblink.svg"
+                  alt="go to the website"
+                  height="24"
+                  width="24"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Foodie Mobile App</h3>
+            <ul class="card-desc">
+              <li>Flutter and Firebase.</li>
+              <li>User authentication system.</li>
+              <li>Google Maps integration.</li>
+              <li>Offers healthy recipes.</li>
+            </ul>
+            <div class="card-links">
+              <a
+                href="https://github.com/ozgeozerr/Foodie_Mobile.git"
+                target="_blank"
+              >
+                <img
+                  src="assets/github-mark.svg"
+                  alt="GitHub repo"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Syllabus Desktop App</h3>
+            <ul class="card-desc">
+              <li>Java and JavaFX.</li>
+              <li>Helps organizing course syllabi</li>
+              <li>Contributions: Structuring, GUI, PM.</li>
+            </ul>
+            <div class="card-links">
+              <a
+                href="https://github.com/ahmetalpsamur/SE302.git"
+                target="_blank"
+              >
+                <img
+                  src="assets/github-mark.svg"
+                  alt="GitHub repo"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Donate It Mobile App</h3>
+            <ul class="card-desc">
+              <li>Flutter and Firebase.</li>
+              <li>Offers clothing donations for children.</li>
+              <li>Joined Google Solution Challenge.</li>
+              <li>Contributons: UI/UX, backend, PM.</li>
+            </ul>
+            <div class="card-links">
+              <a
+                href="https://github.com/ozgeozerr/DonateItProject.git"
+                target="_blank"
+              >
+                <img
+                  src="assets/github-mark.svg"
+                  alt="GitHub repo"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">EasyAssign Desktop App</h3>
+            <ul class="card-desc">
+              <li>C#</li>
+              <li>Evaluates programming assignments</li>
+              <li>Acts as a compiler, interpreter, and score manager</li>
+              <li>Contributions: GUI, SQL, PM.</li>
+            </ul>
+            <div class="card-links">
+              <a
+                href="https://github.com/ozgeozerr/CE316-PROJECT.git"
+                target="_blank"
+              >
+                <img
+                  src="assets/github-mark.svg"
+                  alt="GitHub repo"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Virtual Event Desktop App</h3>
+            <ul class="card-desc">
+              <li>C#, ASP.NET, REST API</li>
+              <li>Virtual Event Management System</li>
+              <li>
+                Contributions: Role-based access / real-time notifications /
+                filtering / RESTful API / SQL
+              </li>
+            </ul>
+            <div class="card-links">
+              <a
+                href="https://github.com/serhatuzunbayir/VirtualEvent"
+                target="_blank"
+              >
+                <img
+                  src="assets/github-mark.svg"
+                  alt="GitHub repo"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Shopalyze Web Platform</h3>
+            <ul class="card-desc">
+              <li>React.js / Flask / RESTful API</li>
+              <li>
+                Machine learning to boosts sales for small businesses by
+                analyzing purchase data.
+              </li>
+              <li>Real-time analytics and email marketing.</li>
+              <li>Contributions: Back-end / PM.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <script src="script.js"></script>
+    </body>
+
+    <footer class="site-footer">
+      <p>Made with 💜 in 2025 • All rights reserved.</p>
+    </footer>
+  </div>
+</html>
