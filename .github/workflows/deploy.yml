@@ -2,8 +2,8 @@ name: Deploy Static HTML to GitHub Pages
 
 on:
   push:
-    branches: ["main"]  # Trigger on pushes to main branch
-  workflow_dispatch:    # Allow manual triggers
+    branches: ["main"] 
+  workflow_dispatch:   
 
 permissions:
   contents: read
@@ -20,7 +20,7 @@ jobs:
       - name: Upload entire repo as artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./   # Upload everything (no Jekyll build needed)
+          path: ./   
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
