@@ -150,16 +150,14 @@ section {
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   border: 3px solid #FFB8E0;
-  transition: transform 0.3s ease;
+ 
 }
 
-.about-photo:hover {
-  transform: scale(1.03);
-}
 
 .about-content {
   display: flex;
-  justify-content: space;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
   margin-top: 30px;
@@ -181,7 +179,7 @@ section {
   list-style: none;
   padding-left: 0;
   margin-top: 10px;
-  background-color: #F6F5F5;
+  background-color: #e6d7dd;
   font-weight:500;
 }
 
@@ -196,7 +194,7 @@ section {
 
 .card-desc li {
   margin-bottom: 8px;
-  background-color: #F6F5F5;
+  background-color: #e6d7dd;
 }
 
 
@@ -204,7 +202,7 @@ section {
   border: 2px solid #FFB8E0;
   padding: 16px;
   border-radius: 8px;
-  background: #F6F5F5;
+  background: #e6d7dd;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 
@@ -231,7 +229,7 @@ section {
 .card-title,
 .project-icons,
 .card-links {
-  background-color: #F6F5F5;
+  background-color: #e6d7dd;
   justify-content: center;
 }
 
@@ -241,14 +239,14 @@ section {
   background: none;
   border: none;
   transition: transform 0.2s ease, filter 0.2s ease;
-  background-color: #F6F5F5;
+  background-color: #e6d7dd;
   display: block;
 }
 
 .card-links a img:hover {
   transform: scale(1.1);
   filter: brightness(1.0);
-  background-color: #F6F5F5;
+  background-color: #e6d7dd;
 }
 
 .card-links {
