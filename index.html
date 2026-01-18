@@ -14,97 +14,124 @@
   <head>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d004735042884b4580f1173d4457a687"}'></script><!-- End Cloudflare Web Analytics -->
   </head>
-  <div class="container">
-    <body>
-      <nav id="navbar">
-        <h3 style="color: white; font-size: 20px; font-weight: 500">
+  <body>
+    <nav id="navbar">
+      <div class="nav-container">
+        <h3 class="nav-name">
           Özge Özer
         </h3>
-        <a class="nav-text" href="#home">Home</a>
-        <a class="nav-text" href="#about">About</a>
-        <a class="nav-text" href="#projects">Projects</a>
-      </nav>
+      </div>
+    </nav>
 
-      <section id="home">
-        <h1 class="bighi">hi, özge here.</h1>
-        <div class="lottie-container" style="width: 600px; height: 400px"></div>
-        <h2 class="welcomehi">welcome to my portfolio.</h2>
-        <h3 class="explainme">
-          I'm a junior computer engineer and a software developer.
-        </h3>
-        <a href="mailto:ozerrrozge@gmail.com" class="mail-button"
-          >contact me!
-        </a>
-      </section>
+    <div class="container">
+      <div class="browser-window">
+        <div class="browser-header">
+          <div class="browser-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="browser-tabs">
+            <div class="browser-tab active" data-tab="about">about me</div>
+            <div class="browser-tab" data-tab="experiences">experiences</div>
+            <div class="browser-tab" data-tab="projects">projects</div>
+          </div>
+        </div>
 
-      <section id="about">
-        <h2 class="header">--- about me ---</h2>
-        <div class="about-content">
+        <div class="browser-content">
+          <div id="tab-about" class="tab-content active">
+            <div class="about-content">
           <div class="text-block">
+            <h1 class="bighi">Hi, Özge here.</h1>
+            <h3 class="explainme">
+              I'm a full stack developer, focused on backend development.
+            </h3>
             <p class="parag">
-              - Fresh graduate from Izmir University of Economics,<br />
+              - I've graduated from Izmir University of Economics,
               where I've studied Computer Engineering and got my Bachelors of
               Science!<br />
               - I am very passionate about programming and creating fun
               projects.<br />
               - I have been working on Web and Mobile Development for a
-              while,<br />and now focused on backend development, especially
-              with JavaScript and .NET.<br />
-              - Here are some other technologies I've been working with:<br />
+              while,<br />and now I'm focused on backend development. <br />
+              - Here are some technologies I've been working with:<br />
             </p>
 
             <ul class="tech-list">
-              <li>Flutter / Dart</li>
-              <li>Java / C#</li>
-              <li>JavaScript</li>
-              <li>HTML / CSS</li>
               <li>Python</li>
-              <li>SQL</li>
-              <li>C# / .NET</li>
-              <li>REST APIs</li>
+              <li>JavaScript</li>
+              <li>RESTful API</li>
+              <li>Celery, Redis</li>
+              <li>PostgreSQL</li>
+              <li>Docker</li>
+              <li>Git, GitHub</li>
+              <li>HTML / CSS</li>
+              <li>Bootstrap</li>
+              <li>Flutter</li>
             </ul>
           </div>
 
           <div class="photo-block">
             <img
-              src="assets/WhatsApp Image 2025-07-11 at 18.02.22.jpeg"
+              src="assets/sitefoto.jpeg"
               class="about-photo"
             />
+            <a href="https://www.linkedin.com/in/ozge-ozerr/" target="_blank" class="mail-button"
+              >contact me!
+            </a>
           </div>
         </div>
-      </section>
+          </div>
 
-      <section id="experiences">
-        <h2 class="header">--- my experiences ---</h2>
-        <div class="experiences">
-          <h3 class="exp-title">- Lixhium -</h3>
-          <p class="parag">
-            ● Developed mobile and web solutions leveraging Flutter, HTML, and
-            CSS. <br />● Helped increased user base by 40k through design and
-            development of Lixhium's website. <br />● Collaborated with the management
-            team to ensure project alignment with business goals.
-          </p>
-        </div>
-        <div class="experiences">
-          <h3 class="exp-title">- TPI Composites -</h3>
-          <p class="parag">
-            ● Created and distributed technical documentation to inform factory
-            staff about new technologies, ensuring smooth adoption and ongoing
-            awareness of updates. <br />● Maintained and monitored network equipment
-            to ensure consistent performance and up time. <br />● Gained practical
-            knowledge in network and systems management, contributing to routine
-            maintenance and issue resolution.
-          </p>
-        </div>
-      </section>
+          <div id="tab-experiences" class="tab-content">
+            <h2 class="bighi">My Experiences</h2>
 
-      <section id="projects">
-        <h2 class="header">--- my projects ---</h2>
+            <div class="experiences">
+              <h3 class="exp-title">Hidromod</h3>
+              <p class="exp-role">Full-Stack Web Developer • September 2024 – Present</p>
+              <p class="parag">
+                - Created a web portal to be integrated in a government website.<br />
+                - Designed and implemented the system architecture using Flask (Python), JavaScript, PostgreSQL, Bootstrap, Celery, Docker and Redis.<br />
+                - Built RESTful APIs and handled asynchronous background processing for tasks involving up to 400 TB of data.<br />
+                - Implemented authentication, user management, and role-based access control, including a secure payment system.<br />
+                - Optimized task queuing and parallel data processing using Celery and Redis to improve performance and scalability.<br />
+                - Ensured the system was modular, maintainable, and ready for integration into broader government infrastructure.
+              </p>
+            </div>
 
-        <div class="projects-grid">
+            <div class="experiences">
+              <h3 class="exp-title">Lixhium</h3>
+              <p class="exp-role">Mobile/Web Developer Intern • August 2023 – March 2024</p>
+              <p class="parag">
+                - Developed mobile and web applications using Flutter, HTML, and CSS.<br />
+                - Contributed to increasing user base by 40k through design and development of Lixhium's website.<br />
+                - Created Lixhium Solar app, initiating a new project for a bigger scale of investments.<br />
+                - Collaborated with the management team to ensure project alignment with business goals.
+              </p>
+            </div>
+
+            <div class="experiences">
+              <h3 class="exp-title">TPI Composites Inc.</h3>
+              <p class="exp-role">System Engineer Intern • July 2023 – August 2023</p>
+              <p class="parag">
+                - Created technical documentation to inform factory staff about new technologies, ensuring smooth adoption and ongoing awareness of updates.<br />
+                - Maintained and monitored network equipment to ensure consistent performance and uptime.<br />
+                - Collaborated with the engineering team to gain experience in system engineering practices.<br />
+                - Gained practical knowledge in network and systems management, contributing to routine maintenance and issue resolution.
+              </p>
+            </div>
+          </div>
+
+          <div id="tab-projects" class="tab-content">
+            <h2 class="bighi">My Projects</h2>
+            <div class="projects-grid">
           
           <div class="card">
             <h3 class="card-title">Virtual Event Desktop App</h3>
@@ -208,29 +235,6 @@
         </div>
 
         <div class="card">
-          <h3 class="card-title">Donate It Mobile App</h3>
-          <ul class="card-desc">
-            <li>Flutter and Firebase.</li>
-            <li>Offers clothing donations for children.</li>
-            <li>Joined Google Solution Challenge.</li>
-            <li>Contributons: UI/UX, backend, PM.</li>
-          </ul>
-          <div class="card-links">
-            <a
-              href="https://github.com/ozgeozerr/DonateItProject.git"
-              target="_blank"
-            >
-              <img
-                src="assets/github-mark.svg"
-                alt="GitHub repo"
-                width="24"
-                height="24"
-              />
-            </a>
-          </div>
-        </div>
-
-        <div class="card">
           <h3 class="card-title">EasyAssign Desktop App</h3>
           <ul class="card-desc">
             <li>C#</li>
@@ -252,13 +256,11 @@
             </a>
           </div>
         </div>
-      </section>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <script src="script.js"></script>
-    </body>
-
-    <footer class="site-footer">
-      <p>Made with 💜 in 2025 • All rights reserved.</p>
-    </footer>
-  </div>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,14 +1,16 @@
 html {
     scroll-behavior: smooth;
+    background-color: #FFF5F8;
 }
 section {
-  scroll-margin-top: 150px; 
+  scroll-margin-top: 150px;
 }
 
 .container {
-  padding: 0 5vw; 
-  max-width: 1200px;
+  padding: 0 5vw;
+  max-width: 1300px;
   margin: 0 auto;
+  background-color: #FFF5F8;
 }
 
 
@@ -16,97 +18,127 @@ section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #190482;  
+  font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #FFF5F8;
 }
 
 
 #navbar{
-    display: flex;
     position:sticky;
     top:0;
     z-index: 1000;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-right: 14px;
     background-color: #190482;
-    justify-content: center;
-    gap: 30px;
+    width: 100%;
+}
 
-    
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #190482;
+}
+
+.nav-name {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #190482;
+}
+
+.nav-links{
+    display: flex;
+    gap: 35px;
+    background-color: #190482;
 }
 
 .nav-text{
     color: #FFB8E0;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .bighi{
-    font-size: 42px;
-    color: white;
+    font-size: 32px;
+    color: #190482;
     width: fit-content;
-    margin: 0 auto;
-    margin-top: 100px;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 12px;
+    background-color: transparent;
+    align-self: center;
 }
 
 .welcomehi{
     font-size:35px;
-    color: #FFB8E0;
+    color: #190482;
     width: fit-content;
     margin: 0 auto;
-
-
+    background-color: transparent;
+    display: none;
 }
 
 .explainme{
-    font-size: 22px;
-    color: #ecdde5;
+    font-size: 20px;
+    color: #333;
     width: fit-content;
-    margin: 0% auto;
-    margin-top: 10px;
-
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    background-color: transparent;
 }
 
 .mail-button {
-    
     width: fit-content;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
     display: block;
-    background-color:#C2D9FF;
-    padding: 12px 24px;
-    border-radius: 20px;
-    border: 2px solid #FFB8E0;
+    background-color: #190482;
+    color: #FFB8E0;
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 3px solid #FFB8E0;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-
+    transition: all 0.2s ease;
+    font-size: 16px;
+    box-shadow: 4px 4px 0 #FFB8E0;
 }
 
 .mail-button:hover{
     background-color: #FFB8E0;
+    color: #190482;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #190482;
 }
 
 .lottie-container{
-   margin: 0 auto;
-
+   background-color: #190482;
 }
 
 .header{
-    color: #FFB8E0;
+    color: #190482;
     font-size: 32px;
     margin-top: 150px;
     margin-bottom: 50px;
-   
+    background-color: transparent;
 }
 
 .parag{
-    color: #e4eefd;
-    font-size: 20px;
-    margin-top: 14px;
-    line-height: 1.5;
-    margin-bottom: 40px;
+    color: #333;
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    background-color: transparent;
 }
 
 .tech-list{
@@ -114,10 +146,11 @@ section {
     columns: 2;
     list-style-type: disc;
     list-style-position: inside;
-    color: white;
+    color: #333;
     margin-top: 0;
-    line-height: 1.5;
-    font-size: 20px;
+    line-height: 1.6;
+    font-size: 17px;
+    background-color: transparent;
 }
 
 .tech-list li::marker{
@@ -126,23 +159,29 @@ section {
 
 .about-content {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  margin-top: 30px;
-  margin-right: 100px;
+  margin-top: 0;
+  margin-right: 0;
+  background-color: transparent;
 }
 
 .text-block {
   flex: 2;
   max-width: 600px;
+  background-color: transparent;
 }
 
 .photo-block {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  gap: 20px;
 }
 
 .about-photo {
@@ -150,42 +189,157 @@ section {
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   border: 3px solid #FFB8E0;
- 
-}
-
-
-.about-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  margin-top: 30px;
-  margin-right: 180px;
-  flex-wrap: wrap; 
 }
 
 .exp-title{
-  font-size: 35px;
-  color: #FFFBCA;
+  font-size: 24px;
+  color: #190482;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 700;
 }
 
+.exp-role {
+  font-size: 16px;
+  color: #666;
+  background-color: transparent;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.experiences {
+  background-color: transparent;
+  margin-bottom: 30px;
+}
+
+section {
+  background-color: #FFF5F8;
+}
+
+#home {
+  background-color: #FFF5F8;
+}
+
+.browser-window {
+  background-color: white;
+  border: 3px solid #190482;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 8px 8px 0 #FFB8E0;
+}
+
+.browser-header {
+  background-color: #E8E8E8;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 2px solid #190482;
+}
+
+.browser-dots {
+  display: flex;
+  gap: 8px;
+  background-color: #E8E8E8;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-red {
+  background-color: #FF5F56;
+  border: 1px solid #E0443E;
+}
+
+.dot-yellow {
+  background-color: #FFBD2E;
+  border: 1px solid #DEA123;
+}
+
+.dot-green {
+  background-color: #27C93F;
+  border: 1px solid #1AAB29;
+}
+
+.browser-tabs {
+  display: flex;
+  gap: 4px;
+  background-color: #E8E8E8;
+  flex: 1;
+}
+
+.browser-tab {
+  background-color: #D0D0D0;
+  padding: 10px 40px;
+  border-radius: 6px 6px 0 0;
+  font-weight: 600;
+  color: #666;
+  font-size: 16px;
+  border: 2px solid #190482;
+  border-bottom: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  text-align: center;
+}
+
+.browser-tab:hover {
+  background-color: #E0E0E0;
+  color: #190482;
+}
+
+.browser-tab.active {
+  background-color: white;
+  color: #190482;
+}
+
+.browser-content {
+  padding: 30px;
+  background-color: white;
+  min-height: 550px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.section-title {
+  color: #190482;
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
 
 #projects{
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 
 .card-desc {
   list-style: none;
   padding-left: 0;
   margin-top: 10px;
-  background-color: #e6d7dd;
+  background-color: white;
   font-weight:500;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .card-desc li::before {
   content: '•';
-  color: #190482; 
+  color: #190482;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -194,43 +348,59 @@ section {
 
 .card-desc li {
   margin-bottom: 8px;
-  background-color: #e6d7dd;
+  background-color: white;
 }
 
 
 .card {
-  border: 2px solid #FFB8E0;
-  padding: 16px;
+  border: 3px solid #190482;
+  padding: 20px;
   border-radius: 8px;
-  background: #e6d7dd;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-
-
+  background: white;
+  transition: all 0.2s ease;
 }
-
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 #FFB8E0;
 }
-
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
+.card-title {
+  background-color: white;
+  color: #190482;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
 
-.card-title,
+.card-tech {
+  background-color: white;
+  color: #FFB8E0;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card-description {
+  background-color: white;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
 .project-icons,
 .card-links {
-  background-color: #e6d7dd;
-  justify-content: center;
+  background-color: white;
+  justify-content: flex-start;
+  margin-top: 15px;
 }
 
 .card-links a img {
@@ -238,15 +408,14 @@ section {
   height: 24px;
   background: none;
   border: none;
-  transition: transform 0.2s ease, filter 0.2s ease;
-  background-color: #e6d7dd;
+  transition: transform 0.2s ease;
+  background-color: white;
   display: block;
 }
 
 .card-links a img:hover {
-  transform: scale(1.1);
-  filter: brightness(1.0);
-  background-color: #e6d7dd;
+  transform: scale(1.2);
+  background-color: white;
 }
 
 .card-links {
@@ -269,64 +438,293 @@ section {
 
 
 
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
-  .bighi {
-    font-size: 32px;
-  }
-
-  .welcomehi {
-    font-size: 28px;
-  }
-
-  .explainme {
-    font-size: 18px;
-  }
-
-  .header {
-    font-size: 28px;
-  }
-
-  .tech-list {
-    columns: 1;
-    font-size: 18px;
-  }
-
-  .about-content {
-    flex-direction: column;
-    margin-right: 0;
-    align-items: center;
-    text-align: center;
-  }
-
-  .text-block, .photo-block {
+  .container {
+    padding: 0 15px;
     max-width: 100%;
   }
 
+  .nav-container {
+    padding: 14px 15px;
+  }
+
+  .nav-name {
+    font-size: 20px;
+  }
+
+  .browser-window {
+    margin-top: 20px;
+    border-radius: 8px;
+    min-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .browser-header {
+    padding: 8px 12px;
+  }
+
+  .browser-tabs {
+    gap: 2px;
+  }
+
+  .browser-tab {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .browser-content {
+    padding: 25px 20px;
+    min-height: auto;
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .bighi {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .explainme {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .parag {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .tech-list {
+    columns: 2;
+    font-size: 19px;
+    gap: 10px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    text-align: center;
+    list-style-position: inside;
+  }
+
+  .about-content {
+    flex-direction: column !important;
+    gap: 25px;
+    margin-top: 0;
+    align-items: stretch !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .text-block {
+    max-width: 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    order: 1;
+    flex: none !important;
+  }
+
+  .photo-block {
+    max-width: 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    align-items: center;
+    order: 3;
+    flex: none !important;
+  }
+
   .about-photo {
-    width: 80%;
+    width: 280px;
+    max-width: 90%;
+  }
+
+  .mail-button {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+
+  .exp-title {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+
+  .exp-role {
+    font-size: 13px;
+  }
+
+  .experiences {
+    margin-bottom: 30px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 19px;
+  }
+
+  .card-tech {
+    font-size: 14px;
+  }
+
+  .card-description {
+    font-size: 15px;
+  }
+
+  .card-desc {
+    font-size: 15px;
   }
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .nav-container {
+    padding: 12px 12px;
+  }
+
+  .nav-name {
+    font-size: 18px;
+  }
+
+  .browser-window {
+    min-height: calc(100vh - 130px);
+  }
+
+  .browser-header {
+    padding: 6px 10px;
+  }
+
+  .browser-tab {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  .browser-content {
+    padding: 20px 15px;
+    overflow-y: auto;
+  }
+
+  .bighi {
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .explainme {
+    font-size: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .parag {
+    font-size: 14px;
+  }
+
+  .tech-list {
+    columns: 2;
+    font-size: 18px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    text-align: center;
+    list-style-position: inside;
+  }
+
   .mail-button {
-    padding: 10px 20px;
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+
+  .about-photo {
+    width: 240px;
+    max-width: 85%;
+  }
+
+  .exp-title {
+    font-size: 20px;
+  }
+
+  .exp-role {
     font-size: 14px;
   }
 
   .card {
-    padding: 12px;
+    padding: 18px;
   }
 
-  .exp-title {
-    font-size: 28px;
-  }
-
-  .parag {
+  .card-title {
     font-size: 18px;
   }
 
-  .site-footer {
-    font-size: 12px;
-    padding: 16px;
+  .card-tech {
+    font-size: 13px;
+  }
+
+  .card-description {
+    font-size: 14px;
+  }
+
+  .card-desc {
+    font-size: 14px;
   }
 }
