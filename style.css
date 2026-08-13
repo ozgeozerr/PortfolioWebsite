@@ -438,6 +438,115 @@ section {
 
 
 
+.app-promo {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 900;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 3px solid #190482;
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 #FFB8E0;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.app-promo:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 #FFB8E0;
+}
+
+.app-promo-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  background-color: #E8E8E8;
+  border-bottom: 2px solid #190482;
+}
+
+.app-promo-badge {
+  margin-left: auto;
+  background-color: #190482;
+  color: #FFB8E0;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+.app-promo-body {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+}
+
+.app-promo-icon {
+  font-size: 28px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.app-promo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.app-promo-title {
+  color: #190482;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.app-promo-tagline {
+  color: #666;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.app-promo-cta {
+  display: block;
+  text-align: center;
+  background-color: #190482;
+  color: #FFB8E0;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px;
+  border-top: 2px solid #190482;
+}
+
+@media (max-width: 768px) {
+  .app-promo {
+    width: 200px;
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .app-promo-body {
+    padding: 10px;
+  }
+
+  .app-promo-icon {
+    font-size: 22px;
+  }
+
+  .app-promo-title {
+    font-size: 14px;
+  }
+
+  .app-promo-tagline {
+    font-size: 11px;
+  }
+}
+
 @media (max-width: 1024px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
