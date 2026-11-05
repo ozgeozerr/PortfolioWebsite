@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <script>
     if (location.hostname === "ozgeozer.me") {
       location.replace(
@@ -37,23 +37,30 @@
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d004735042884b4580f1173d4457a687"}'></script><!-- End Cloudflare Web Analytics -->
   </head>
   <body>
+    <div class="backdrop" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+      <span class="blob blob-4"></span>
+    </div>
+
     <nav id="navbar">
-      <div class="nav-container">
-        <h3 class="nav-name">
-          Özge Özer
-        </h3>
+      <div class="nav-container glass">
+        <span class="nav-name">Özge Özer</span>
+        <span class="nav-role">full stack developer</span>
       </div>
     </nav>
 
     <div class="container">
-      <div class="browser-window">
+      <div class="browser-window glass">
         <div class="browser-header">
           <div class="browser-dots">
             <span class="dot dot-red"></span>
             <span class="dot dot-yellow"></span>
             <span class="dot dot-green"></span>
           </div>
-          <div class="browser-tabs">
+          <div class="browser-tabs" role="tablist">
+            <span class="tab-indicator" aria-hidden="true"></span>
             <div class="browser-tab active" data-tab="about">about me</div>
             <div class="browser-tab" data-tab="experiences">experiences</div>
             <div class="browser-tab" data-tab="projects">projects</div>
@@ -97,8 +104,9 @@
             <img
               src="assets/imgözge.jpeg"
               class="about-photo"
+              alt="Photo of Özge Özer"
             />
-            <a href="https://www.linkedin.com/in/ozge-ozerr/" target="_blank" class="mail-button"
+            <a href="https://www.linkedin.com/in/ozge-ozerr/" target="_blank" rel="noopener" class="mail-button"
               >contact me!
             </a>
           </div>
@@ -148,7 +156,7 @@
             <h2 class="bighi">My Projects</h2>
             <div class="projects-grid">
 
-          <div class="card">
+          <div class="card glass-soft">
             <h3 class="card-title">Stylepin (Influencer Link App)</h3>
             <ul class="card-desc">
               <li>React Native (Expo) / TypeScript / Supabase</li>
@@ -171,7 +179,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card glass-soft">
             <h3 class="card-title">Virtual Event Desktop App</h3>
             <ul class="card-desc">
               <li>C#, ASP.NET, REST API</li>
@@ -196,7 +204,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card glass-soft">
             <h3 class="card-title">Shopalyze Web Platform</h3>
             <ul class="card-desc">
               <li>React.js / Flask / RESTful API</li>
@@ -209,7 +217,7 @@
             </ul>
           </div>
 
-        <div class="card">
+        <div class="card glass-soft">
           <h3 class="card-title">Lixhium's Website</h3>
           <ul class="card-desc">
             <li>HTML and CSS, Django.</li>
@@ -227,7 +235,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card glass-soft">
           <h3 class="card-title">Foodie Mobile App</h3>
           <ul class="card-desc">
             <li>Flutter and Firebase.</li>
@@ -250,7 +258,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card glass-soft">
           <h3 class="card-title">Syllabus Desktop App</h3>
           <ul class="card-desc">
             <li>Java and JavaFX.</li>
@@ -272,7 +280,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card glass-soft">
           <h3 class="card-title">EasyAssign Desktop App</h3>
           <ul class="card-desc">
             <li>C#</li>
@@ -303,7 +311,7 @@
       href="https://play.google.com/store/apps/details?id=com.anonymous.trackmybm"
       target="_blank"
       rel="noopener"
-      class="app-promo"
+      class="app-promo glass"
     >
       <div class="app-promo-header">
         <span class="dot dot-red"></span>
@@ -312,7 +320,7 @@
         <span class="app-promo-badge">new app</span>
       </div>
       <div class="app-promo-body">
-        <span class="app-promo-icon">📱</span>
+        <span class="app-promo-icon" aria-hidden="true">📱</span>
         <div class="app-promo-text">
           <span class="app-promo-title">Remissia</span>
           <span class="app-promo-tagline">private IBS/IBD tracker — no cloud, no accounts, just you</span>
