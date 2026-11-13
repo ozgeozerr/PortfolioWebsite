@@ -593,17 +593,6 @@ body {
     0 8px 24px rgba(25, 4, 130, 0.06);
 }
 
-.experiences::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 26px;
-  bottom: 26px;
-  width: 3px;
-  border-radius: 3px;
-  background: linear-gradient(180deg, #5b3cf5, var(--pink-deep));
-}
-
 .exp-title {
   font-size: 22px;
   font-weight: 700;
